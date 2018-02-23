@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-drift",
   "description": "Gatsby plugin for drift.com.",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
   "devDependencies": {
     "babel-cli": "^6.26.0",
