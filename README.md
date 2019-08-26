@@ -15,6 +15,7 @@ plugins: [
     resolve: 'gatsby-plugin-drift',
     options: {
       appId: 'YOUR-APP-ID',
+      enableDuringDevelop: true // Optional. Enables Drift chat widget when running Gatsby dev server. Defaults to false.
     },
   },
 ],

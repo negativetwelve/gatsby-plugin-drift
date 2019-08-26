@@ -1,7 +1,13 @@
 import React from 'react';
 
-exports.onRenderBody = ({setPostBodyComponents}, pluginOptions) => {
-  if (process.env.NODE_ENV === 'production') {
+exports.onRenderBody = (
+  { setPostBodyComponents },
+  pluginOptions = { enableDuringDevelop: false }
+) => {
+  if (
+    pluginOptions.enableDuringDevelop ||
+    process.env.NODE_ENV === 'production'
+  ) {
     return setPostBodyComponents([
       <script
         key={'gatsby-plugin-drift'}
